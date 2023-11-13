@@ -23,20 +23,22 @@ impl Fruit {
 }
 
 fn main() {
-    let fruits_vec: Vec<Fruit> = Vec::from([
-        Fruit::Apple {
-            color: String::from("Green"),
-            taste: String::from("Sour"),
-        },
-        Fruit::Pear {
-            color: String::from("Yellow"),
-            taste: String::from("Sweet"),
-        },
-        Fruit::Pineapple {
-            color: String::from("Yellow"),
-            taste: String::from("Juicy"),
-        }
-        ]);
+    let fruits_vec: Vec<Fruit> = Vec::from(
+        [
+            Fruit::Apple {
+                color: String::from("Green"),
+                taste: String::from("Sour"),
+            },
+            Fruit::Pear {
+                color: String::from("Yellow"),
+                taste: String::from("Sweet"),
+            },
+            Fruit::Pineapple {
+                color: String::from("Yellow"),
+                taste: String::from("Juicy"),
+            }
+        ]
+    );
 
     Fruit::features(&fruits_vec)
 }
